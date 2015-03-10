@@ -5,7 +5,7 @@ var through = require('through2');
 var minimatch = require('minimatch');
 
 module.exports = function(globs, opt) {
-  if(!isArray(globs))
+  if(!Array.isArray(globs))
     globs = [globs];
   var cwd = opt.cwd || process.cwd();
   var stream = through.obj(function(file, enc, cb){
