@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/joshux/gulp-exclude/issues"
   },
-  "homepage": "https://github.com/joshux/gulp-exclude"
+  "homepage": "https://github.com/joshux/gulp-exclude",
+  "dependencies": {
+    "minimatch": "^2.0.3",
+    "path": "^0.11.14",
+    "through2": "^0.6.3"
+  }
 }
