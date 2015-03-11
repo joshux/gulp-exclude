@@ -5,6 +5,7 @@ var through = require('through2');
 var minimatch = require('minimatch');
 
 module.exports = function(globs, opt) {
+  opt = opt || {}
   if(!Array.isArray(globs))
     globs = [globs];
   var cwd = opt.cwd || process.cwd();
